@@ -1,0 +1,1 @@
+export const SEARCH_CHARACTER = 'SEARCH_CHARACTER';
