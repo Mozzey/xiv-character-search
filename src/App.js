@@ -1,12 +1,14 @@
 import React from 'react';
 
-import Search from './components/search/search.component';
+import SearchForm from './components/search-form/search-form.component';
 
 function App() {
   return (
     <div className="App">
-      <Search />
-      <h2>App</h2>
+      <h1 style={{ textAlign: 'center', margin: '50px 0' }}>
+        FFXIV Character Search
+      </h1>
+      <SearchForm />
     </div>
   );
 }

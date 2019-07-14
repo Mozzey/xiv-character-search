@@ -1,1 +1,2 @@
 export const SEARCH_CHARACTER = 'SEARCH_CHARACTER';
+export const GET_SERVER_LIST = 'GET_SERVER_LIST';

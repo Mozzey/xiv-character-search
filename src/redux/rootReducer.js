@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
-import characterSearchReducer from './search/search.reducers';
+import searchFromReducer from './search-form/search-form.reducers';
 
 const rootReducer = combineReducers({
-  characterSearchResults: characterSearchReducer,
+  searchResults: searchFromReducer,
 });
 
 export default rootReducer;
