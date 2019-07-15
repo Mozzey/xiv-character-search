@@ -12,12 +12,12 @@ const ResultItem = ({ character }) => {
 
   return (
     <ResultItemStyled key={ID}>
-      <img src={Avatar} alt="Avatar" />
+      <Link to="/" style={{ display: 'inline-flex' }}>
+        <img src={Avatar} alt="Avatar" />
+      </Link>
       <ResultTextContainer>
-        <h3>
-          <ResultItemLink to="/">{Name}</ResultItemLink>
-        </h3>
-        <p>{Server}</p>
+        <ResultItemLink to="/">{Name}</ResultItemLink>
+        <p style={{ marginTop: '20px' }}>{Server}</p>
       </ResultTextContainer>
     </ResultItemStyled>
   );

@@ -10,9 +10,7 @@ const ResultListWithSpinner = WithSpinner(ResultList);
 
 const App = ({ loading }) => (
   <div className="App">
-    <h1 style={{ textAlign: 'center', margin: '50px 0' }}>
-      FFXIV Character Search
-    </h1>
+    <h1 style={appHeaderCss}>FFXIV Character Search</h1>
     <SearchForm />
     <ResultListWithSpinner loading={loading} />
   </div>
@@ -21,5 +19,14 @@ const App = ({ loading }) => (
 const mapStateToProps = ({ search: { loading } }) => ({
   loading,
 });
+
+const appHeaderCss = {
+  display: 'flex',
+  height: '10vh',
+  color: '#FFFFFF',
+  background: '#2544a6',
+  justifyContent: 'center',
+  alignItems: 'center',
+};
 
 export default connect(mapStateToProps)(App);
