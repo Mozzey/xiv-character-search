@@ -1,4 +1,8 @@
-import { SEARCH_CHARACTER, GET_SERVER_LIST } from './search-form.types';
+import {
+  SEARCH_CHARACTER,
+  GET_SERVER_LIST,
+  IS_LOADING,
+} from './search-form.types';
 
 import xivapi from '../../axios/xivapi';
 
@@ -44,4 +48,11 @@ export const getServerList = () => async dispatch => {
   } catch (err) {
     console.error(err);
   }
+};
+
+export const isLoading = (loadingFlag = false) => {
+  return {
+    type: IS_LOADING,
+    payload: loadingFlag,
+  };
 };

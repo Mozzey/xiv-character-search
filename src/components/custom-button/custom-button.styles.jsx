@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components';
 
 const searchButtonStyles = css`
-  background: #048de2;
+  background: #2544a6;
   color: #ffffff;
 `;
 
 const baseButtonStyles = css`
   color: #ffffff;
-  background: #000000;
+  background: #24292e;
 `;
 
 const getButtonStyles = props => {
