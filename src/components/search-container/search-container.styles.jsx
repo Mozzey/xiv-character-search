@@ -6,4 +6,8 @@ export const SearchContainerStyled = styled.div`
   justify-content: center;
   align-content: center;
   margin-left: 10px;
+
+  @media screen and (max-width: 580px) {
+    grid-auto-flow: row;
+  }
 `;

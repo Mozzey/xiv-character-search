@@ -8,4 +8,8 @@ export const SearchFormStyled = styled.form`
   align-items: center;
   justify-content: center;
   margin: 2rem 0;
+
+  @media screen and (max-width: 580px) {
+    grid-auto-flow: row-reverse;
+  }
 `;
