@@ -54,7 +54,7 @@ class SearchForm extends Component {
           <FormInput
             type="text"
             name="characterName"
-            placeholder="Search Characters"
+            placeholder="Character Name (ex: Cloud Strife)"
             onInputChange={this.onInputChange}
           />
           <CustomButton type="submit" isSearchButton>
